@@ -1,0 +1,86 @@
+.mainContacto{
+	display: block;
+	@include desde($media){
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+}
+
+.formulario{
+	text-align: center;
+	margin: 1em;
+	font-weight: bold;
+	width: auto;
+}
+
+#name, #name2, #name3, textarea{
+	border: 2px solid rgba($color2, .3);
+	box-shadow: 4px 6px 7px -3px #777;
+
+}
+
+.label{
+	margin-left: -15em;
+	font-family: 'Poppins', sans-serif;
+	font-style: italic;
+}
+.labell{
+	margin-left: -16em;
+	
+}
+
+#name, #name2, #name3{
+	height: 25px;
+	width: 300px;
+}
+
+.boton{
+	text-align: center;
+	margin-bottom: 1em;
+	margin-top: -1em;
+}
+
+.botoon{
+	border: none;
+	background: $color2;
+	text-transform: capitalize !important;
+	border-radius:8px;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	width: 90px;
+	height: 33px;
+	&:hover{
+		background:$color1;
+		cursor: pointer;
+	}
+}
+
+.datos{
+	margin: 1em;
+	border-left: 1px solid rgba($color1, .3);
+	padding-left: 1em;
+	@include desde($media){
+		transform: translateY(1em);
+		
+	}
+}
+
+.aside{
+	width: 100%;
+}
+
+.mapa{
+	margin: 1em;
+	box-shadow: 4px 7px 8px -3px #777;
+	@include desde($media){
+	width: 300px;
+	margin-bottom: 1em;
+	margin: 1em;
+	}
+	@include desde($grande){
+	width: 500px;
+	margin-bottom: 1em;
+	margin: 1em;
+	}
+}

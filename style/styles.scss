@@ -1,0 +1,31 @@
+/*tableta de colores*/
+$color1:#025D80;
+$color2:#0488BB;
+$color3:#011117;
+
+/*mixin para media query*/
+@mixin desde($size){
+	@media screen and(min-width: $size){
+		@content;
+	}
+}
+
+/*canvas*/
+$canvas: 12em;
+
+/*tamaños de pantallas*/
+$pequeña: 400px;
+$media: 720px;
+$grande: 1080px;
+$xxl: 1200px;
+
+@import"includs/_header";
+@import"includs/_section";
+@import"includs/_contenidoinformativo";
+@import"includs/_servicios";
+@import"includs/_footer";
+@import"includs/_contacto";
+
+/*font-family*/
+/*font-family: 'Farsan', cursive;*/
+/*font-family: 'Quicksand', sans-serif;*/

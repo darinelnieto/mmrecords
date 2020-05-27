@@ -1,0 +1,138 @@
+.servicios{
+	padding: 0 3%;
+
+	@include desde($pequeña){
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+
+.servis{
+	width: 93%;
+	border-radius: 8px 8px 0 0;
+	box-shadow: 4px 3px 5px -2px #999;
+	box-sizing: border-box;
+	border:1px solid rgba(#999, .1);
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
+	text-align: center;
+	background: white;
+	@include desde($pequeña){
+		width: calc(50% -1.7em);
+		margin: 1 1 1em;
+	}
+	@include desde($pequeña){
+		width: 47%;
+	}
+	@include desde($grande){
+		width: 23%;
+	}
+}
+
+.imgser{
+	border-radius:8px 8px 0 0;
+}
+
+.textinf{
+	font-family: 'Poppins', sans-serif;
+	color: #777;
+}
+
+.contactar{
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	background: $color2;
+	display: inline-block;
+	line-height: 2;
+	padding: 0 1.2em;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	font-size: .9em;
+	&:hover{
+		background:$color1;
+	}
+}
+
+/*estilos de informacion ampliada de la pagina de servicios*/
+body{
+	margin: 0;
+	width: 100%;
+	padding:0;
+}
+
+
+
+.contenserv{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	@include desde($media){
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	margin-top: 2em;
+	margin-bottom: 3em;
+	}
+}
+
+.infoProdu{
+	width: 90%;
+	display: block;
+	margin:0;
+	padding: 0;
+	text-align: center;
+	margin-left: 1em;
+
+	@include desde($pequeña){
+		margin-left: 2em;
+	}
+	@include desde($media){
+		display: flex;
+		justify-content: space-between;
+		margin-top: 8em;
+	}
+}
+
+.imgproduc{
+	border-radius: 50%;	
+	box-shadow: 4px 3px 5px -2px #999;
+}
+
+.imgproduc-1{
+	border-radius: 50%;	
+	box-shadow: 4px 3px 5px -2px #999;
+}
+
+.imgproducc{
+	border-radius: 50%;
+	box-shadow: 4px 3px 5px -2px #999;
+}
+
+@media(max-width: 991px){
+	.imgproduc-1{
+	 display: none;
+	}
+}
+
+@media(min-width: 992px){
+	.imgproducc{
+	display: none;
+}
+}
+
+/* fin de estilos de informacion ampliada de la pagina de servicios*/
+ 
+ .orgEvent{
+ 	justify-content: center;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .container{
+ 	margin-top: 3em;
+ 	margin-bottom: 3em;
+ }

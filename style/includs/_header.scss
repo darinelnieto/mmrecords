@@ -1,0 +1,95 @@
+body{
+	width:100%;
+	margin: 0;
+}
+
+p, strong, .menu1{
+	font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Farsan', cursive;
+}
+
+/*menu respnsid*/
+
+header{
+	width: 100%;
+	background: white;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 3%;
+	align-items: center;
+	position: fixed;
+	box-shadow: 0 0 6px 0 #777;
+}
+
+#btn-menu{
+	display: none;
+}
+
+header label{
+	display: none;
+	width: 60px;
+	padding: 20px;
+	color: $color2;
+	font-size: 25px;
+	transition: .5s;
+	cursor: pointer;
+	margin-left: 60px;
+	&:hover{
+		background-color: rgba($color1, .3);
+
+	}
+
+}
+
+.menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+
+.menu li strong{
+	font-family: helvetica;
+	text-transform: uppercase;
+	font-style: bold;
+	color: $color2;
+	display: block;
+	padding: 10px;
+	transition: .7s;
+	&:hover{
+		background-color:  rgba($color2, .7);
+		color: white;
+	}
+}
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration:none;
+	}
+}
+
+@media(max-width: $media){
+	header label{
+		display: block;
+	}
+	.menu{
+		position: absolute;
+		background: white;
+		width: 100%;
+		margin-top: -100%;
+		transition: .7s;
+	}
+	.menu ul{
+		flex-direction: column;
+		border-top: 1px solid #fffa;
+	}
+	#btn-menu:checked ~ .menu{
+		margin: 0;
+	}
+}

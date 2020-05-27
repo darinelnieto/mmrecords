@@ -1,0 +1,70 @@
+/*index*/
+.text2{
+	
+	padding-right: 1.5em;
+}
+
+.continfo{
+	width: 100%;
+	margin-left: -1em;
+	text-align: center;
+}
+/*termino de index*/
+
+/*estilos nosotros*/
+.centrado{
+	width: 100%;
+}
+
+.iconoCentral{
+	text-align: center;
+}
+
+.textImg{
+	display: block;
+	text-align: center;
+	margin-bottom: 1em;
+	@include desde($media){
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.imgInfo{
+	border-radius: 50%;
+}
+
+.contenidoNs, .contenidoNs2{
+	margin-right: 2em;
+	
+	@include desde($media){
+		transform: translateY(40px);
+	}
+}
+.textImg2{
+	display: block;
+	text-align: center;
+	margin-bottom: 1em;
+	@include desde($media){
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.imgcen{
+	text-align: center;
+}
+/*termino de nosotros*/
+
+/*estilos de servicios.html*/
+.centradoServ{
+	width: 100%;
+}
+
+.centralserv{
+	text-align: center;
+	margin: 0;
+}
+/* fin estilos de servicios.html*/
+
+
