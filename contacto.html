@@ -11,117 +11,95 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-	<header class="header">
-<!-- logo y menu -->
-			<img src="img/logotipo.png">
-		<div class="mimenu">
-			<input type="checkbox" id="btn-menu">
-			<label for="btn-menu" class="icon-bars"></label>
-
-			<nav class="menu">
-				<ul>
-					<li><a href="index.html" class="menu1"><strong>inicio</strong></a></li>
-					<li><a href="nosotros.html" class="menu1"><strong>nosotros</strong></a></li>
-					<li><a href="servicios.html" class="menu1"><strong>servicios</strong></a></li>
-					<li><a href="contacto.html" class="menu1"><strong>contacto</strong></a></li>
-				</ul>
-			</nav>
+<header>
+		<div class="container-fluid">
+			<div class="row align-item-center">
+				<div class="col-12 col-md-7">
+					<img src="img/logotipo.png">
+				</div>
+				<div class="col-12 text-center col-md-5 ">
+					<ul>
+						<li><a href="index.html" class="menu1">inicio</a></li>
+						<li><a href="servicios.html" class="menu1">servicios</a></li>
+						<li><a href="contacto.html" class="menu1">contacto</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</header>
 	<!-- logo y menu -->
 
 	<!-- imagen principal -->
-	<section class="contacto">
-		<div class="imgContacto" alt="imagen principal">
-			<div class="divContacto">
-				<h1 class="textContacto">Nosotros</h1>
+	<section class="banner3">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6" data-aos="fade-right">
+					<h1 class="baner">Contacto</h1>
+				</div>
 			</div>
-		</div>	
+		</div>
 	</section>
 <!-- fin de imagen principal -->
 
-<!-- logo centrado  -->
-	<section>
-		<article class="centrado">
-			<div class="iconoCentral">
-				<img src="img/logotipo.png" class="imgNosotros2">
-			</div>
-		</article>
-<!-- fin de logo centrado  -->
-	
-	<main class="mainContacto">
+
 		<!-- inicio formulario -->
 		<section>
-			<form action="contacto.php">
-				<div class="formulario">
-					<div class="label">
-						<label for="name"> Nombre:</label>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<div class="card">
+							<form action="" class="card-body">
+								<div class="form-group">
+									<label for="name"> Nombre:</label>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder=" darinel nieto diaz" size="30" required="required" >
+								</div>
+								<div class="form-group">
+									<label for="name"> Email:</label>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="tu@email.com" size="30" required="required" >
+								</div>
+								<div class="form-group">
+									<label for="name"> Asunto:</label>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="asunto" size="30" required="required" >
+								</div>
+								<div class="form-group">
+									<label for="text">Mensaje:</label>
+								</div>
+								<div class="form-group">
+									<textarea name="" class="form-control" cols="33" rows="5"></textarea>
+								</div>
+									<input type="submit" class="btn btn-info" id="btn" value="Enviar">
+							</form>
+						</div>
 					</div>
-					<div class="inputt">
-						<input type="text" name="name" id="name" placeholder="  darinel nieto diaz" size="30" required="required" >
+					<div class="col-12 col-lg-6">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5976095730643!2d-75.56762538585059!3d6.3164703272893306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f1a34a11b35%3A0xa1e974d540713477!2sCra.%2058BB%20%26%20Cl.%2027a%2C%20Bello%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1588091679192!5m2!1ses!2sco"frameborder="0" style="border:0;" width="100%" height="275px" allowfullscreen="" aria-hidden="false" tabindex="0" class="mapa"></iframe>
+						<div class="icon-map"><strong>calle 27a # 58bb-64</strong></div>
+						<div class="icon-phone"><strong> 0981237654</strong></div>
 					</div>
-				</div>
-
-				<div class="formulario">
-					<div class="labell">
-						<label for="name"> Email:</label>
-					</div>
-					<div class="inputt">
-						<input type="text" name="name2" id="name2" placeholder="  tu@email.com" size="30" required="required" >
-					</div>
-				</div>
-
-				<div class="formulario">
-					<div class="label">
-						<label for="name"> Asunto:</label>
-					</div>
-					<div class="inputt">
-						<input type="text" name="name3" id="name3" placeholder="  asunto" size="30" required="required" >
-					</div>
-				</div>
-
-				
-				<div class="formulario">
-					<div class="label">
-						<label for="text">Mensaje:</label>
-					</div>
-					<div >
-						<textarea name="" cols="40" rows="10"></textarea>
-					</div>
-				</div>
-				<div class="boton">
-					<input type="submit" class="botoon" value="Enviar">
-				</div>
-			</form>
-		</section>
-		<!-- fin de formulario -->
-				
-		<div class="map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5976095730643!2d-75.56762538585059!3d6.3164703272893306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f1a34a11b35%3A0xa1e974d540713477!2sCra.%2058BB%20%26%20Cl.%2027a%2C%20Bello%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1588091679192!5m2!1ses!2sco"frameborder="0" style="border:0;" width="90%" height="275px" allowfullscreen="" aria-hidden="false" tabindex="0" class="mapa"></iframe>
-			<!-- ubicacion -->
-		<section>
-			<div class="datos">
-				<div class="datoContacto">
-					<div class="icon-map"><strong>calle 27a # 58bb-64</strong></div>
-					<div class="icon-phone"><strong> 0981237654</strong></div>
+						<!-- ubicacion -->
 				</div>
 			</div>
 		</section>
-		<!-- fin de  ubicacion -->
-		</div>
-
-	</main>
-
-	
-		
-	
+		<!-- fin de formulario -->
 
 	<!-- pie de pagina -->
 	<footer class="footer">
-		<span>siguenos</span>
-		<a href="http://facebook.com" class="icon-facebook"></a>
-		<a href="http://youtube.com" class="icon-youtube"></a>
-		<a href="http://twitter.com" class="icon-twitter"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<span>siguenos</span>
+						<a href="http://facebook.com" class="icon-facebook"></a>
+						<a href="http://youtube.com" class="icon-youtube"></a>
+						<a href="http://twitter.com" class="icon-twitter"></a>
+				</div>
+			</div>
+		</div>
 	</footer>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
