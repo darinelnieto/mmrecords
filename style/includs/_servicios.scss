@@ -98,12 +98,12 @@ body{
 }
 
 .imgproduc{
-	border-radius: 50%;	
+	border-radius: 50%;
 	box-shadow: 4px 3px 5px -2px #999;
 }
 
 .imgproduc-1{
-	border-radius: 50%;	
+	border-radius: 50%;
 	box-shadow: 4px 3px 5px -2px #999;
 }
 
@@ -135,4 +135,14 @@ body{
  .container{
  	margin-top: 3em;
  	margin-bottom: 3em;
+ }
+
+
+ #btn{
+ 	background: #E64137;
+ 	border: none;
+ }
+
+ #btn:focus{
+ 	box-shadow: none;
  }
