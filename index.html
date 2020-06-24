@@ -12,31 +12,32 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-	<header class="header">
-		<!-- logo y menu -->
-			<img src="img/logotipo.png">
-		<div class="mimenu">
-				<input type="checkbox" id="btn-menu">
-				<label for="btn-menu" class="icon-bars"></label>
-
-			<nav class="menu">
-				<ul>
-					<li><a href="index.html" class="menu1"><strong>inicio</strong></a></li>
-					<li><a href="nosotros.html" class="menu1"><strong>nosotros</strong></a></li>
-					<li><a href="servicios.html" class="menu1"><strong>servicios</strong></a></li>
-					<li><a href="contacto.html" class="menu1"><strong>contacto</strong></a></li>
-				</ul>
-			</nav>
+	<header>
+		<div class="container-fluid">
+			<div class="row align-item-center">
+				<div class="col-12 col-md-7">
+					<img src="img/logotipo.png">
+				</div>
+				<div class="col-12 text-center col-md-5 ">
+					<ul>
+						<li><a href="index.html" class="menu1">inicio</a></li>
+						<li><a href="servicios.html" class="menu1">servicios</a></li>
+						<li><a href="contacto.html" class="menu1">contacto</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</header>
 					
 	<!-- imagen principal -->
-	<section class="princ">
-		<div class="img1" alt="imagen principal">
-			<div class="textprinc">
-				<h1 class="text"> MUNDO MUSICAL RECORDS</h1>
+	<section class="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6" data-aos="fade-right">
+					<h1 class="baner">Mundo Musical Records</h1>
+				</div>
 			</div>
-		</div>	
+		</div>
 	</section>
 
 	<!-- contenido informativo -->
@@ -44,52 +45,82 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 text-center">
-					<img src="img/logotipo.png" class="img2">			
-				</div>
-				<div class="col-12 text-center">
-					<p>Pone a tu disposicion toda la tecnologia, conocimiento, experiencia y personal profecional capacitado, para llevar a cabo la elaboracion de todos y cada uno de tus proyectos musicales, de principio a fin, <strong>sin importar</strong> cual sea tu genero musical. Para esto te invitamos a conocer las siguientes areas con las que te podemos servir.</p>
+					<p>MM Records pone a tu disposicion toda la tecnologia, conocimiento, experiencia y personal profecional capacitado, para llevar a cabo la elaboracion de todos y cada uno de tus proyectos musicales, de principio a fin, <strong>sin importar</strong> cual sea tu genero musical. Para esto te invitamos a conocer las siguientes areas con las que te podemos servir.</p>
 				</div>
 			</div>	
 		</div>
 	</section>
 	<!-- imagenes informativas -->
-	<main class="servicios">
-		<div class="servis" data-aos="zoom-in">
-			<div class="textservi">
-				<img src="img/img4.jpg" width="100%" height="
-				275px" class="imgser">
+	<main>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-3 text-center" data-aos="flip-up">
+							<img src="img/img4.jpg" width="100%" height="275px" class="imgtar">
+							<h3 class="tituTar">produccion musical</h3>
+							<a href="servicios.html" class="btn btn-danger" id="btnn">ver mas</a>
+					</div>
+					<div class="col-12 col-lg-3 text-center" data-aos="flip-down">
+						<img src="img/img5.jpg" width="100%" height="275px" class="imgtar">
+						<h3 class="tituTar">produccion audiovidual</h3>
+						<a href="servicios.html" class="btn btn-danger" id="btnn">ver mas</a>
+					</div>
+					<div class="col-12 col-lg-3 text-center" data-aos="flip-up">
+						<img src="img/img7.jpg" width="100%" height="275px" class="imgtar">	
+						<h3 class="tituTar">publicidad</h3>
+						<a href="servicios.html" class="btn btn-danger" id="btnn">ver mas</a>
+					</div>
+					<div class="col-12 col-lg-3 text-center" data-aos="flip-down">
+						<img src="img/img6.jpg" width="100%"  height="275px" class="imgtar">
+						<h3 class="tituTar">organizacion de eventos</h3>
+						<a href="servicios.html" class="btn btn-danger" id="btnn">ver mas</a>
+					</div>
+				</div>
 			</div>
-			<h3 class="textinf">produccion musical</h3>
-			<a href="servicios.html" class="contactar">ver mas</a>
-		</div>
-		<div class="servis" data-aos="zoom-in">
-			<div class="textservi">
-				<img src="img/img5.jpg" width="100%" height="275px" class="imgser">
+		</section>
+		<!-- contenido informativbo de nosotros -->
+	<section>
+		<div class="container">
+			<div class="row align-item-center">
+				<div class="col-12 text-center col-lg-3">
+					<img src="img/imgprofeci.jpg" class="imgproduc" width="200px" height="200px" data-aos="zoom-in">
+				</div>
+				<div class="col-12 col-lg-9 orgEvent" data-aos="zoom-in">
+					<p><strong>Mundo Musical Records</strong> es una industria dedicada a la produccion musical, nacida en enero de el año 2000. cuyos principios basicos han sido proporcionar herramientas necesarias para la elaboracion de musica; a las personas que sueñan con transmitir por medio de la musica, sus emociones y sentimientos.</p>
+				</div>
 			</div>
-			<h3 class="textinf">produccion audiovidual</h3>
-			<a href="servicios.html" class="contactar">ver mas</a>
 		</div>
-		<div class="servis" data-aos="zoom-in">
-			<div class="textservi">
-				<img src="img/img7.jpg" width="100%" height="275px" class="imgser">	
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row align-item-center">
+				<div class="col-12 text-center">
+					<img src="img/img2.jpg" alt="" class="imgproducc" width="200px" height="200px" data-aos="zoom-in">
+				</div>
+				<div class="col-12 col-lg-9 orgEvent" data-aos="zoom-in">
+					<p>Brinda un acompañamiento de principio a fin en la carrera musical de los artistas o asta que el artista lo decida, tambien proporciona personal capacitado en composicion de notas acusticas en instrumentos para la creacion de la pista sonora de una cancion e implementos necesesarios para la grabacion de una canciòn.</p>
+				</div>
+				<div class="col-lg-3 text-lg-right">
+					<img src="img/img2.jpg" alt="" class="imgproduc-1" width="200px" height="200px" data-aos="zoom-in">
+				</div>
 			</div>
-			<h3 class="textinf">publicidad</h3>
-			<a href="servicios.html" class="contactar">ver mas</a>
 		</div>
-		<div class="servis" data-aos="zoom-in">
-			<div class="textservi">
-				<img src="img/img6.jpg" width="100%"  height="275px" class="imgser">
-			</div>
-			<h3 class="textinf">organizacion de eventos</h3>
-			<a href="servicios.html" class="contactar">ver mas</a>
-		</div>
+	</section>
+<!-- fin de contenido informativbo de nosotros -->
 	</main>
 	<!-- pie de pagina -->
 	<footer class="footer">
-		<span>siguenos</span>
-		<a href="http://facebook.com" class="icon-facebook"></a>
-		<a href="http://youtube.com" class="icon-youtube"></a>
-		<a href="http://twitter.com" class="icon-twitter"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<span>siguenos</span>
+						<a href="http://facebook.com" class="icon-facebook"></a>
+						<a href="http://youtube.com" class="icon-youtube"></a>
+						<a href="http://twitter.com" class="icon-twitter"></a>
+				</div>
+			</div>
+		</div>
 	</footer>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
