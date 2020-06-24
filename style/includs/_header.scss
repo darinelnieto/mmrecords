@@ -1,76 +1,63 @@
 body{
 	width:100%;
 	margin: 0;
+	background: #FAF5F3;
 }
 
-p, strong, .menu1{
-	font-family: 'Quicksand', sans-serif;
+p, .menu1{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-style: italic;
 }
 
 h1, h2, h3, h4, h5, h6{
-	font-family: 'Farsan', cursive;
+	font-family: 'Poppins', sans-serif;
+	font-weight: Semi-bold 600;
 }
 
 /*menu respnsid*/
 
 header{
 	width: 100%;
-	background: white;
+	height: auto;
+	background: #FAF5F3;
 	top: 0;
 	left: 0;
 	z-index: 100;
 	display: flex;
 	justify-content: space-between;
 	padding: 0 3%;
-	align-items: center;
 	position: fixed;
 	box-shadow: 0 0 6px 0 #777;
 }
 
-#btn-menu{
-	display: none;
-}
 
-header label{
-	display: none;
-	width: 60px;
-	padding: 20px;
-	color: $color2;
-	font-size: 25px;
-	transition: .5s;
-	cursor: pointer;
-	margin-left: 60px;
-	&:hover{
-		background-color: rgba($color1, .3);
-
-	}
-
-}
-
-.menu ul{
+ul{
 	margin: 0;
 	list-style: none;
-	padding: 0;
+	padding-top: 10px;
 	display: flex;
+	align-items: center;
+	text-align: right;
 }
 
-.menu li strong{
+
+li{
 	font-family: helvetica;
 	text-transform: uppercase;
 	font-style: bold;
 	color: $color2;
 	display: block;
-	padding: 10px;
-	transition: .7s;
-	&:hover{
-		background-color:  rgba($color2, .7);
-		color: white;
-	}
+	padding:5px 10px;
 }
 a{
 	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
 	&:hover{
 		text-decoration:none;
+		color: $color2;
+		border-bottom: 4px solid #E64137;
 	}
 }
 
