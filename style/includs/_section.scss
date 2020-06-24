@@ -11,89 +11,57 @@
 	}
 
 }
-.img1{
-	background-image: url(../img/imgemed.jpg);
+.banner{
+	background-image: url(../img/baner1.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 	width:100%;
-	height: 310px;
-	margin: 0;
-	padding: -1em;
-	@include desde($media){
-	background-image: url(../img/imgegra.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	width:100%;
-	height: 310px;
-	margin: 0;
-	padding: -1em;
-	}
-	@include desde($grande){
-	background-image: url(../img/imge.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	width:100%;
-	height: 310px;
-	margin: 0;
-	padding: -1em;
-	}
-	@include desde($xxl){
-		background-image: url(../img/imgexxl.jpg);
+	height: 600px;
+	margin-top: -3%
+}
+.baner{
+	margin-top: 46%;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-weight: Semi-bold 600;
+	font-style: italic;
+	border-bottom: 1px solid white;
+}
+
+@media(max-width: 799px){
+	.baner{
+		margin-top: 75%;
 	}
 }
 
-.text{
-	font-family: 'Quicksand', sans-serif;
-	color: white;
-	font-size: 1.3em;
-	text-align: center;
-	transform: translateY(155px);
+
+
+.btn{
+	border-radius: 20px;
+	width: 100px;
 }
+
+.imgtar{
+	border-radius: 8px;
+	margin-bottom: 1px;
+}
+
+.link:hover{
+	filter: brightness(70%);
+}
+.tituTar{
+	font-size: 20px;
+	margin-top: 0;
+	color: black;
+}
+
+
+
+
+
 
 /* estilos de nosotros.html*/
-.nosotros{
-	@include desde($pequeña){
-	height: 310px;
-	width: 100%;
-	margin-top: -1em;
-	}
-	@include desde($media){
-	height: 310px;
-	width: 100%;
-	margin-top: -1em;
-	}
-
-}
-.imgNosotros{
-	background-image: url(../img/nosotros.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	width:100%;
-	height: 310px;
-	margin: 0;
-	padding: -1em;
-	@include desde($media){
-	background-image: url(../img/nosotrosmed.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	width:100%;
-	height: 310px;
-	margin: 0;
-	padding: -1em;
-	}
-	@include desde($grande){
-	background-image: url(../img/nosotrosgrande.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	width:100%;
-	height: 310px;
-	margin: 0;
-	padding: -1em;
-	}
-	@include desde($xxl){
-		background-image: url(../img/nosotrosxxl.jpg);
-	}
-}
 
 .textNosotros{
 	font-family: 'Quicksand', sans-serif;
@@ -118,44 +86,29 @@
 	}
 
 }
-.imgServicio{
-	background-image: url(../img/serviciospeq.jpg);
+.banner2{
+	background-image: url(../img/baner2.jpeg);
 	background-repeat: no-repeat;
 	background-position: center;
 	width:100%;
-	height: 310px;
+	height: 600px;
 	margin: 0;
 	padding: -1em;
-	@include desde($media){
-	background-image: url(../img/serviciosmed.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	width:100%;
-	height: 310px;
-	margin: 0;
-	padding: -1em;
-	}
-	@include desde($grande){
-	background-image: url(../img/serviciosgra.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	width:100%;
-	height: 310px;
-	margin: 0;
-	padding: -1em;
-	}
-	@include desde($xxl){
-		background-image: url(../img/serviciosxxl.jpg);
-	}
 }
 
-.textservicios{
-	font-family: 'Quicksand', sans-serif;
+.baner2{
 	color: white;
-	font-size: 1.3em;
-	text-align: center;
-	transform: translateY(155px);
-	text-transform: uppercase;
+	margin-top: 46%;
+	font-family: 'Poppins', sans-serif;
+	font-weight: Semi-bold 600;
+	font-style: italic;
+	border-bottom: 1px solid white;
+
+}
+@media(max-width: 799px){
+	.baner2{
+		margin-top: 75%;
+	}
 }
 
 /*estilos de contacto*/
@@ -172,35 +125,12 @@
 	}
 
 }
-.imgContacto{
-	background-image: url(../img/contactopeq.jpg);
+.banner3{
+	background-image: url(../img/baner3.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
-	width:100%;
-	height: 310px;
-	margin: 0;
-	padding: -1em;
-	@include desde($media){
-	background-image: url(../img/contactomed.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	width:100%;
-	height: 310px;
-	margin: 0;
-	padding: -1em;
-	}
-	@include desde($grande){
-	background-image: url(../img/contactogra.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	width:100%;
-	height: 310px;
-	margin: 0;
-	padding: -1em;
-	}
-	@include desde($xxl){
-		background-image: url(../img/contactoxxl.jpg);
-	}
+	background-size: cover;
+	height: 600px;
 }
 
 .textContacto{
@@ -210,5 +140,10 @@
 	text-align: center;
 	transform: translateY(155px);
 	text-transform: uppercase;
+}
+
+#btnn{
+	width: 130px;
+	background-color: #E64137;
 }
 
