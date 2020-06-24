@@ -6,75 +6,62 @@
 body {
   width: 100%;
   margin: 0;
+  background: #FAF5F3;
 }
 
-p, strong, .menu1 {
-  font-family: "Quicksand", sans-serif;
+p, .menu1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Farsan", cursive;
+  font-family: "Poppins", sans-serif;
+  font-weight: Semi-bold 600;
 }
 
 /*menu respnsid*/
 header {
   width: 100%;
-  background: white;
+  height: auto;
+  background: #FAF5F3;
   top: 0;
   left: 0;
   z-index: 100;
   display: flex;
   justify-content: space-between;
   padding: 0 3%;
-  align-items: center;
   position: fixed;
   box-shadow: 0 0 6px 0 #777;
 }
 
-#btn-menu {
-  display: none;
-}
-
-header label {
-  display: none;
-  width: 60px;
-  padding: 20px;
-  color: #0488BB;
-  font-size: 25px;
-  transition: 0.5s;
-  cursor: pointer;
-  margin-left: 60px;
-}
-header label:hover {
-  background-color: rgba(2, 93, 128, 0.3);
-}
-
-.menu ul {
+ul {
   margin: 0;
   list-style: none;
-  padding: 0;
+  padding-top: 10px;
   display: flex;
+  align-items: center;
+  text-align: right;
 }
 
-.menu li strong {
+li {
   font-family: helvetica;
   text-transform: uppercase;
   font-style: bold;
   color: #0488BB;
   display: block;
-  padding: 10px;
-  transition: 0.7s;
-}
-.menu li strong:hover {
-  background-color: rgba(4, 136, 187, 0.7);
-  color: white;
+  padding: 5px 10px;
 }
 
 a {
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 a:hover {
   text-decoration: none;
+  color: #0488BB;
+  border-bottom: 4px solid #E64137;
 }
 
 @media (max-width: 720px) {
@@ -114,104 +101,51 @@ a:hover {
   }
 }
 
-.img1 {
-  background-image: url(../img/imgemed.jpg);
+.banner {
+  background-image: url(../img/baner1.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   width: 100%;
-  height: 310px;
-  margin: 0;
-  padding: -1em;
-}
-@media screen and (min-width: 720px) {
-  .img1 {
-    background-image: url(../img/imgegra.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 310px;
-    margin: 0;
-    padding: -1em;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .img1 {
-    background-image: url(../img/imge.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 310px;
-    margin: 0;
-    padding: -1em;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .img1 {
-    background-image: url(../img/imgexxl.jpg);
-  }
+  height: 600px;
+  margin-top: -3%;
 }
 
-.text {
-  font-family: "Quicksand", sans-serif;
+.baner {
+  margin-top: 46%;
   color: white;
-  font-size: 1.3em;
-  text-align: center;
-  transform: translateY(155px);
+  font-family: "Poppins", sans-serif;
+  font-weight: Semi-bold 600;
+  font-style: italic;
+  border-bottom: 1px solid white;
+}
+
+@media (max-width: 799px) {
+  .baner {
+    margin-top: 75%;
+  }
+}
+.btn {
+  border-radius: 20px;
+  width: 100px;
+}
+
+.imgtar {
+  border-radius: 8px;
+  margin-bottom: 1px;
+}
+
+.link:hover {
+  filter: brightness(70%);
+}
+
+.tituTar {
+  font-size: 20px;
+  margin-top: 0;
+  color: black;
 }
 
 /* estilos de nosotros.html*/
-@media screen and (min-width: 400px) {
-  .nosotros {
-    height: 310px;
-    width: 100%;
-    margin-top: -1em;
-  }
-}
-@media screen and (min-width: 720px) {
-  .nosotros {
-    height: 310px;
-    width: 100%;
-    margin-top: -1em;
-  }
-}
-
-.imgNosotros {
-  background-image: url(../img/nosotros.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 310px;
-  margin: 0;
-  padding: -1em;
-}
-@media screen and (min-width: 720px) {
-  .imgNosotros {
-    background-image: url(../img/nosotrosmed.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 310px;
-    margin: 0;
-    padding: -1em;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .imgNosotros {
-    background-image: url(../img/nosotrosgrande.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 310px;
-    margin: 0;
-    padding: -1em;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .imgNosotros {
-    background-image: url(../img/nosotrosxxl.jpg);
-  }
-}
-
 .textNosotros {
   font-family: "Quicksand", sans-serif;
   color: white;
@@ -237,52 +171,30 @@ a:hover {
   }
 }
 
-.imgServicio {
-  background-image: url(../img/serviciospeq.jpg);
+.banner2 {
+  background-image: url(../img/baner2.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 310px;
+  height: 600px;
   margin: 0;
   padding: -1em;
 }
-@media screen and (min-width: 720px) {
-  .imgServicio {
-    background-image: url(../img/serviciosmed.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 310px;
-    margin: 0;
-    padding: -1em;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .imgServicio {
-    background-image: url(../img/serviciosgra.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 310px;
-    margin: 0;
-    padding: -1em;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .imgServicio {
-    background-image: url(../img/serviciosxxl.jpg);
-  }
-}
 
-.textservicios {
-  font-family: "Quicksand", sans-serif;
+.baner2 {
   color: white;
-  font-size: 1.3em;
-  text-align: center;
-  transform: translateY(155px);
-  text-transform: uppercase;
+  margin-top: 46%;
+  font-family: "Poppins", sans-serif;
+  font-weight: Semi-bold 600;
+  font-style: italic;
+  border-bottom: 1px solid white;
 }
 
+@media (max-width: 799px) {
+  .baner2 {
+    margin-top: 75%;
+  }
+}
 /*estilos de contacto*/
 @media screen and (min-width: 400px) {
   .contacto {
@@ -299,41 +211,12 @@ a:hover {
   }
 }
 
-.imgContacto {
-  background-image: url(../img/contactopeq.jpg);
+.banner3 {
+  background-image: url(../img/baner3.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
-  height: 310px;
-  margin: 0;
-  padding: -1em;
-}
-@media screen and (min-width: 720px) {
-  .imgContacto {
-    background-image: url(../img/contactomed.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 310px;
-    margin: 0;
-    padding: -1em;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .imgContacto {
-    background-image: url(../img/contactogra.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 310px;
-    margin: 0;
-    padding: -1em;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .imgContacto {
-    background-image: url(../img/contactoxxl.jpg);
-  }
+  background-size: cover;
+  height: 600px;
 }
 
 .textContacto {
@@ -345,18 +228,11 @@ a:hover {
   text-transform: uppercase;
 }
 
-/*index*/
-.text2 {
-  padding-right: 1.5em;
+#btnn {
+  width: 130px;
+  background-color: #E64137;
 }
 
-.continfo {
-  width: 100%;
-  margin-left: -1em;
-  text-align: center;
-}
-
-/*termino de index*/
 /*estilos nosotros*/
 .centrado {
   width: 100%;
@@ -565,15 +441,24 @@ body {
   margin-bottom: 3em;
 }
 
+#btn {
+  background: #E64137;
+  border: none;
+}
+
+#btn:focus {
+  box-shadow: none;
+}
+
 .footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  min-height: 100px;
-  max-height: 100px;
+  min-height: 150px;
+  max-height: 150px;
   text-align: center;
-  background: #0488BB;
+  background: #E64137;
 }
 
 .icon-facebook, .icon-youtube, .icon-twitter {
@@ -602,63 +487,14 @@ h1, h2, h3, h4, h5, h6 {
   font-style: bold;
 }
 
-.mainContacto {
-  display: block;
-}
-@media screen and (min-width: 720px) {
-  .mainContacto {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
+.btn {
+  width: 100%;
 }
 
-.formulario {
-  text-align: center;
-  margin: 1em;
-  font-weight: bold;
-  width: auto;
-}
-
-#name, #name2, #name3, textarea {
-  border: 2px solid rgba(4, 136, 187, 0.3);
-  box-shadow: 4px 6px 7px -3px #777;
-}
-
-.label {
-  margin-left: -15em;
-  font-family: "Poppins", sans-serif;
-  font-style: italic;
-}
-
-.labell {
-  margin-left: -16em;
-}
-
-#name, #name2, #name3 {
-  height: 25px;
-  width: 300px;
-}
-
-.boton {
-  text-align: center;
-  margin-bottom: 1em;
-  margin-top: -1em;
-}
-
-.botoon {
+.form-control:focus {
+  box-shadow: none;
   border: none;
-  background: #0488BB;
-  text-transform: capitalize !important;
-  border-radius: 8px;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  width: 90px;
-  height: 33px;
-}
-.botoon:hover {
-  background: #025D80;
-  cursor: pointer;
+  box-shadow: 0.5px -0.5px 3px 1px #E64137;
 }
 
 .datos {
@@ -676,22 +512,17 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
-.mapa {
-  margin: 1em;
-  box-shadow: 4px 7px 8px -3px #777;
-}
 @media screen and (min-width: 720px) {
   .mapa {
     width: 300px;
     margin-bottom: 1em;
-    margin: 1em;
   }
 }
 @media screen and (min-width: 1080px) {
   .mapa {
-    width: 500px;
-    margin-bottom: 1em;
-    margin: 1em;
+    width: 542px;
+    height: 500px;
+    margin-bottom: -1px;
   }
 }
 
