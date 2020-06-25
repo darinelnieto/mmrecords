@@ -127,22 +127,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script>
  		 AOS.init();
-		$(document).ready(function() {
-			var scroll = $(window).scrollTop();
-			$(window).scroll(function(event) {
-    		var scroll = $(window).scrollTop();
-    /*Cambia el color del div cuando es distinto a 0*/
-    		if(scroll!=0){
-       			 $('.header').css({
-           			 position: "fixed"
-       			 });
-   				 }else{
-       				 $('header').css({
-           				 position: "static"
-       			 });
-    			}
-			});
-			});
 	</script>
 </body>
 </html>
